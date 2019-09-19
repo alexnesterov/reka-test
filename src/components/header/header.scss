@@ -1,0 +1,7 @@
+.header {
+
+  &__inner {
+    @extend %container;
+    position: relative;
+  }
+}

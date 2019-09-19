@@ -1,0 +1,57 @@
+// Reset the box-sizing, position and others
+html {
+  box-sizing: border-box;
+  min-width: 320px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  // Fix some resize in flexbox elements
+  // min-width: 0;
+  // min-height: 0;
+}
+
+::selection {
+  color: white;
+  // Fix Chrome selection
+  background: rgba($brand_primary, 0.99);
+}
+
+::-moz-selection {
+  color: white;
+  background: $brand_primary;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  font-family: $page_font;
+  font-size: $page_font-size;
+  font-weight: $page_font-weight;
+  line-height: $page_line-height;
+  background: $page_background;
+  color: $page_color;
+  @if ($page_font-antialiased) {
+    -webkit-font-smoothing: antialiased;
+  }
+  overflow-x: hidden;
+}
+
+// Links
+a {
+  color: $link_color;
+  text-decoration: $link_decoration;
+
+  &:hover {
+    color: $link_hover-color;
+    text-decoration: $link_hover-decoration;
+  }
+}
+
+img {
+  max-width: 100%;
+}
