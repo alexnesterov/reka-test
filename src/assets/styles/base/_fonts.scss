@@ -1,0 +1,68 @@
+/*
+* PROXIMA NOVA
+*/
+
+// Proxima Nova Regular
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../fonts/ProximaNova/ProximaNova-Regular.eot');
+  src: local('../fonts/ProximaNova/Proxima Nova Regular'), local('ProximaNova-Regular'),
+    url('../fonts/ProximaNova/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ProximaNova/ProximaNova-Regular.woff') format('woff'),
+    url('../fonts/ProximaNova/ProximaNova-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+// Proxima Nova Light
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../fonts/ProximaNova/ProximaNova-Light.eot');
+  src: local('../fonts/ProximaNova/Proxima Nova Light'), local('ProximaNova-Light'),
+    url('../fonts/ProximaNova/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ProximaNova/ProximaNova-Light.woff') format('woff'),
+    url('../fonts/ProximaNova/ProximaNova-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+// Proxima Nova Bold
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../fonts/ProximaNova/ProximaNova-Bold.eot');
+  src: local('../fonts/ProximaNova/Proxima Nova Bold'), local('ProximaNova-Bold'),
+    url('../fonts/ProximaNova/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ProximaNova/ProximaNova-Bold.woff') format('woff'),
+    url('../fonts/ProximaNova/ProximaNova-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+/*
+* BEBAS NEUE
+*/
+
+// Bebas Neue Book
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('../fonts/BebasNeue/BebasNeueBook.eot');
+  src: local('../fonts/BebasNeue/Bebas Neue Book'), local('BebasNeueBook'),
+    url('../fonts/BebasNeue/BebasNeueBook.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BebasNeue/BebasNeueBook.woff') format('woff'),
+    url('../fonts/BebasNeue/BebasNeueBook.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+// Bebas Neue Bold
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('../fonts/BebasNeue/BebasNeueBold.eot');
+  src: local('../fonts/BebasNeue/Bebas Neue Bold'), local('BebasNeueBold'),
+    url('../fonts/BebasNeue/BebasNeueBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/BebasNeue/BebasNeueBold.woff') format('woff'),
+    url('../fonts/BebasNeue/BebasNeueBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}

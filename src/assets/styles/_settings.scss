@@ -6,10 +6,10 @@ $white:                 #fff;
 $gray:                  #464a4c;
 $black:                 #000;
 
-$brand_primary:         #cc4b37;
-$brand_secondary:       #767676;
+$brand_primary:         #CC1E2C;
+$brand_secondary:       #818181;
 $brand_body:            #fff;
-$brand_text:            #2b303b;
+$brand_text:            #484848;
 
 // Uncomment, if needed
 // $brand_info:            #5bc0de;
@@ -18,17 +18,17 @@ $brand_text:            #2b303b;
 // $brand_danger:          #cc4b37;
 
 // Fonts
-$font_primary: 'Roboto', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-$font_secondary: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font_primary: 'Proxima Nova', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font_secondary: 'Bebas Neue', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 // Page
 $page_background:         $white;
 $page_color:              $brand_text;
 $page_font:               $font_primary;
-$page_font-size:          16px;
-$page_line-height:        1.6;
+$page_font-size:          14px;
+$page_line-height:        1.214285714;
 $page_font-weight:        400;
-$page_font-antialiased:   false;
+$page_font-antialiased:   true;
 
 // Links
 $link_color:              $brand_primary;
@@ -43,5 +43,5 @@ $breakpoint_tablet:   992px;
 $breakpoint_desktop:  1200px;
 
 // Grid
-$grid_container:  1170px;
 $grid_gutter:     30px;
+$grid_container:  1300px + $grid_gutter;
