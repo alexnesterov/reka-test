@@ -12,12 +12,18 @@ window.jQuery = $;
 // the line below
 //import './lib/foundation-explicit-pieces';
 
-var nav = priorityNav.init({
-  navDropdownClassName: 'header__nav-dropdown',
-  navDropdownToggleClassName: 'header__nav-dropdown-toggle',
-  navDropdownLabel: 'Ещё',
-  breakPoint: '768',
-  navDropdownBreakpointLabel: 'Меню'
+$(window).on('load', function() {
+  $('body').addClass('page_ready');
+});
+
+$(function() {
+  var nav = priorityNav.init({
+    mainNavWrapper: '.menu__nav-wrap .menu__nav',
+    mainNav: '.menu__nav-wrap .menu__nav .menu__nav-list',
+    navDropdownLabel: 'Ещё',
+    navDropdownClassName: 'menu__nav-dropdown',
+    navDropdownToggleClassName: 'menu__nav-dropdown-toggle'
+  });
 });
 
 /**
@@ -25,13 +31,10 @@ var nav = priorityNav.init({
  */
 $(function() {
   let $notify = $('.notify'),
-      $notifyClose = $notify.find('.notify__close');
+    $notifyClose = $notify.find('.notify__close');
 
   $notifyClose.on('click', () => {
-    $notify.addClass('notify_hide');
-    setTimeout(() => {
-      $notify.remove();
-    }, 300)
+    $notify.remove();
   });
 });
 

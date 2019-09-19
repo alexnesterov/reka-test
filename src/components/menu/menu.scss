@@ -1,0 +1,133 @@
+.menu {
+  padding: 10px 0;
+  background: #4F4F4F;
+  color: #B0B0B0;
+
+  @include media(mobile) {
+    display: none;
+  }
+
+  &__inner {
+    @extend %container;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__nav-wrap {
+    flex: 1 1 0%;
+    padding-right: 30px;
+    visibility: hidden;
+    opacity: 0;
+
+    .page_ready & {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &__nav {
+    font-size: 14px;
+    line-height: 1;
+  }
+
+  &__nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    white-space: nowrap;
+  }
+
+  &__nav-item {
+    display: inline-block;
+
+    & + & {
+      padding-left: 30px;
+    }
+  }
+
+  &__nav-link {
+    padding: 3px 0;
+    display: inline-block;
+    color: inherit;
+
+    &:hover {
+      color: darken(#B0B0B0, 15%);
+    }
+  }
+
+  &__nav-dropdown-wrapper {
+    display: inline-block;
+  }
+
+  &__nav-dropdown {
+    margin: 10px 0 0 0;
+    padding: 10px 20px;
+    list-style: none;
+    text-align: right;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    color: $brand_text;
+    box-shadow: 0 0 10px rgba(#000, .2);
+
+    & .menu__nav-item {
+      display: block;
+      padding: 4px 0;
+    }
+  }
+
+  &__nav-dropdown-toggle {
+    background: transparent;
+    border: 0 none;
+    color: inherit;
+    padding: 2px 0 2px 30px;
+    cursor: pointer;
+
+    &:hover {
+      color: darken(#B0B0B0, 15%);
+    }
+
+    &:after {
+      content: '▼';
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: -2px;
+      margin-left: 7px;
+      font-size: 10px;
+      line-height: 1;
+    }
+  }
+
+  &__right {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+
+    .menu__nav {
+      text-transform: uppercase;
+    }
+  }
+
+  &__city-select {
+    margin-right: 34px;
+    padding: 3px 0;
+    font-size: 14px;
+    line-height: 1;
+    cursor: pointer;
+
+    &:hover {
+      color: darken(#B0B0B0, 15%);
+    }
+
+    &:before {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: -4px;
+      margin-right: 5px;
+      width: 16px;
+      height: 16px;
+      background: url('../images/icon_pin.svg') no-repeat center;
+    }
+  }
+}
