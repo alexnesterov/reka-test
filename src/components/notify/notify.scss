@@ -1,0 +1,38 @@
+.notify {
+  padding: 7px 0 6px;
+  background-color: #01b0cb;
+  transition: opacity .2s ease-in-out;
+
+  &_hide {
+    opacity: 0;
+  }
+
+  &__inner {
+    @extend %container;
+    position: relative;
+  }
+
+  &__message {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+
+    b {
+      font-size: 14px;
+    }
+  }
+
+  &__close {
+    padding: 0;
+    width: 16px;
+    height: 16px;
+    background: transparent;
+    border: 0 none;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+}

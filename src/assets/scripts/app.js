@@ -20,4 +20,20 @@ var nav = priorityNav.init({
   navDropdownBreakpointLabel: 'Меню'
 });
 
+/**
+ * Notify
+ */
+$(function() {
+  let $notify = $('.notify'),
+      $notifyClose = $notify.find('.notify__close');
+
+  $notifyClose.on('click', () => {
+    $notify.addClass('notify_hide');
+    setTimeout(() => {
+      $notify.remove();
+    }, 300)
+  });
+});
+
+// Test
 console.log('Ready!');
