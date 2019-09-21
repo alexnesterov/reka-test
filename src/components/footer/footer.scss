@@ -6,6 +6,24 @@
     @extend %container;
   }
 
+  &__row {
+    display: flex;
+    margin-left: -$grid_gutter/2;
+    margin-right: -$grid_gutter/2;
+  }
+
+  &__col {
+    padding: 0 $grid_gutter/2;
+
+    &:first-child {
+      flex: 1 1 0%;
+    }
+  }
+
+  &__nav {
+    flex: 1 1 0%;
+  }
+
   &__logo {
     display: block;
     margin-bottom: 38px;
