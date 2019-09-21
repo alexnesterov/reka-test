@@ -1,9 +1,14 @@
 .logo {
 
+  &__link {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
   &__img {
     display: inline-block;
     vertical-align: middle;
-    width: 119px;
+    width: 126px;
 
     @include media(tablet) {
       width: 130px;
