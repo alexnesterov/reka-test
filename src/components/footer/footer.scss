@@ -25,6 +25,42 @@
     flex: 1 1 0%;
   }
 
+  &__bottom {
+    display: flex;
+    margin-top: 30px;
+    margin-left: -48px;
+    color: #757474;
+    font-size: 12px;
+    line-height: 1.333333333;
+    font-weight: 300;
+  }
+
+  &__copyright {
+    flex: 0 0 80%;
+    max-width: 80%;
+    padding-left: 48px;
+  }
+
+  &__reka {
+    flex: 0 0 20%;
+    max-width: 20%;
+    padding-left: 48px;
+
+    a {
+      display: inline-block;
+      color: #757474;
+
+      &:hover {
+        color: #fff;
+      }
+
+      span {
+        display: block;
+        font-weight: 700;
+      }
+    }
+  }
+
   &__logo {
     display: block;
     margin-bottom: 38px;
