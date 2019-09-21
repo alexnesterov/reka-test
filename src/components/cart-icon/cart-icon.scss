@@ -2,9 +2,22 @@
   position: relative;
   padding: 5px 10px 0 0;
 
+  @include media(tablet) {
+    padding: 0;
+  }
+
   svg {
     display: inline-block;
     vertical-align: middle;
+
+    @include media(tablet) {
+      width: 23px;
+      height: auto;
+    }
+  }
+
+  &__link {
+    display: block;
   }
 
   &__count {
@@ -22,5 +35,9 @@
     color: #fff;
     justify-content: center;
     align-items: center;
+
+    @include media(tablet) {
+      display: none;
+    }
   }
 }

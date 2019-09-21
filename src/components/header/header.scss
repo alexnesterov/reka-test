@@ -7,6 +7,11 @@
 
   &__main {
     background: #171717;
+
+    @include media(tablet) {
+      padding: 14px 0 14px;
+      height: 50px;
+    }
   }
 
   &__row {
@@ -23,6 +28,20 @@
     padding: 0 15px;
   }
 
+  &__burger {
+    display: none;
+    margin-right: 16px;
+
+    svg {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    @include media(tablet) {
+      display: block;
+    }
+  }
+
   &__nav {
     margin-left: 35px;
   }
@@ -30,5 +49,34 @@
   &__search,
   &__cart-icon {
     margin-left: 30px;
+
+    @include media(tablet) {
+      margin-left: 20px;
+    }
+  }
+
+  &__nav,
+  &__phone,
+  &__search {
+    @include media(tablet) {
+      display: none;
+    }
+  }
+
+  &__profile {
+    display: none;
+
+    @include media(tablet) {
+      display: block;
+    }
+
+    svg {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  &__profile-link {
+    display: block;
   }
 }

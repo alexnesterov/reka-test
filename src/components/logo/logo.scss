@@ -4,5 +4,9 @@
     display: inline-block;
     vertical-align: middle;
     width: 119px;
+
+    @include media(tablet) {
+      width: 130px;
+    }
   }
 }
