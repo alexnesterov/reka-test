@@ -1,0 +1,25 @@
+.phone {
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 100;
+
+  &__link {
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  &__desc {
+    color: #afafaf;
+    margin: 0 0 3px 10px;
+  }
+
+  &__number {
+    font-size: 22px;
+    span {
+      font-weight: 500;
+    }
+  }
+}

@@ -2,6 +2,18 @@
 * PROXIMA NOVA
 */
 
+// Proxima Nova Thin
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('../fonts/ProximaNova/ProximaNovaT-Thin.eot');
+	src: local('../fonts/ProximaNova/Proxima Nova Thin'), local('ProximaNovaT-Thin'),
+		url('../fonts/ProximaNova/ProximaNovaT-Thin.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova/ProximaNovaT-Thin.woff') format('woff'),
+		url('../fonts/ProximaNova/ProximaNovaT-Thin.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
+}
+
 // Proxima Nova Regular
 @font-face {
   font-family: 'Proxima Nova';

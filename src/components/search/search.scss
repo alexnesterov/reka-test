@@ -1,0 +1,35 @@
+.search {
+  position: relative;
+  width: 230px;
+
+  &__input {
+    width: 100%;
+    padding: 5px 20px 5px 0;
+    padding-right: 20px;
+    font-size: 14px;
+    line-height: 1;
+    color: #fff;
+    background: transparent;
+    border: 0 none;
+    border-bottom: 2px solid #505050;
+
+    &:focus {
+      border-color: #fff;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+    background: transparent;
+    border: 0 none;
+    cursor: pointer;
+
+    svg {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}
