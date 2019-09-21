@@ -17,6 +17,7 @@
 
     &:first-child {
       flex: 1 1 0%;
+      padding-right: 60px;
     }
   }
 
@@ -65,9 +66,9 @@
 
   &__mail {
     a {
-      color: inherit;
+      color: #757474;
       &:hover {
-        color: inherit;
+        color: lighten(#757474, 15%);
       }
     }
   }
