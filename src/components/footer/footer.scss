@@ -18,6 +18,10 @@
     &:first-child {
       flex: 1 1 0%;
       padding-right: 60px;
+
+      @include media(desktop) {
+        padding-right: 15px;
+      }
     }
   }
 
@@ -33,18 +37,30 @@
     font-size: 12px;
     line-height: 1.333333333;
     font-weight: 300;
+
+    @include media(desktop) {
+      margin-left: -30px;
+    }
   }
 
   &__copyright {
     flex: 0 0 80%;
     max-width: 80%;
     padding-left: 48px;
+
+    @include media(desktop) {
+      padding-left: 30px;
+    }
   }
 
   &__reka {
     flex: 0 0 20%;
     max-width: 20%;
     padding-left: 48px;
+
+    @include media(desktop) {
+      padding-left: 30px;
+    }
 
     a {
       display: inline-block;
