@@ -1,6 +1,60 @@
 .footer {
+  padding: 40px 0 55px;
+  background: #232323;
 
   &__inner {
     @extend %container;
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 38px;
+
+    svg {
+      display: inline-block;
+      vertical-align: middle;
+      width: 162px;
+      height: auto;
+
+      * {
+        fill: #484848;
+      }
+    }
+  }
+
+  &__number {
+    a {
+      color: #fff;
+      font-size: 27px;
+      font-weight: 100;
+      &:hover {
+        color: #fff;
+      }
+
+      span {
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__time,
+  &__mail {
+    margin-top: 5px;
+    color: #757474;
+    font-size: 14px;
+    font-weight: 100;
+  }
+
+  &__mail {
+    a {
+      color: inherit;
+      &:hover {
+        color: inherit;
+      }
+    }
+  }
+
+  &__social {
+    margin-top: 30px;
   }
 }
