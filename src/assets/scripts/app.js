@@ -50,6 +50,7 @@ $(function() {
     loop: true,
     pagination: {
       el: '.swiper-pagination',
+      clickable: true,
     },
     // Navigation arrows
     navigation: {
@@ -61,6 +62,13 @@ $(function() {
       el: '.swiper-scrollbar',
     },
     speed: 600,
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        // slidesPerView: 2,
+        // spaceBetween: 20
+      },
+    }
   });
 });
 
