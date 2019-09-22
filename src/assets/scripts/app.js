@@ -12,7 +12,9 @@ window.jQuery = $;
 // the line below
 //import './lib/foundation-explicit-pieces';
 
-$(window).on('load', function() {
+let $window = $(window);
+
+$window.on('load', function() {
   $('body').addClass('page_ready');
 });
 
@@ -36,6 +38,36 @@ $(function() {
   $notifyClose.on('click', () => {
     $notify.remove();
   });
+});
+
+/**
+ * Footer Nav
+ */
+$(function() {
+  let $footerNav = $('.footer-nav'),
+    $footerNavTitle = $footerNav.find('.footer-nav__title');
+  let isMobile = false;
+
+  $window.on('resize load', () => {
+    let windowWidth = $(window).width();
+
+    if (windowWidth <= 992) {
+      if (!isMobile) {
+        $footerNav.addClass('footer-nav_mobile');
+        $footerNavTitle.on('click', (e) => {
+          let $aim = $(e.target);
+          $aim.next().toggleClass('footer-nav__list_open');
+        });
+        isMobile = true;
+      }
+    }
+    else if (isMobile) {
+      $footerNav.removeClass('footer-nav_mobile');
+      $footerNavTitle.off('click');
+      isMobile = false;
+    }
+  });
+
 });
 
 // Test

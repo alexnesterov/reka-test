@@ -14,6 +14,7 @@
     padding-right: 15px;
     border-top: 1px solid #1D1D1D;
     border-bottom: 1px solid #1D1D1D;
+    display: block;
   }
 
   &__column {
@@ -23,20 +24,44 @@
     @include media(desktop) {
       padding-left: 30px;
     }
+
+    @include media(tablet) {
+      text-align: center;
+      margin-top: 16px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
   }
 
   &__title {
     margin: 0 0 15px;
     font-size: 12px;
     font-weight: 700;
+    letter-spacing: 1.12px;
     text-transform: uppercase;
     color: #fff;
+
+    @include media(tablet) {
+      font-size: 14px;
+    }
   }
 
   &__list {
     margin: 0;
     padding: 0;
     list-style: none;
+
+    .footer-nav_mobile & {
+      display: none;
+      opacity: 0;
+
+      &_open {
+        display: block;
+        opacity: 1;
+      }
+    }
   }
 
   &__item {
@@ -46,6 +71,7 @@
   &__link {
     font-size: 12px;
     color: #9D9C9C;
+
     &:hover {
       color: darken(#9D9C9C, 15%);
     }
