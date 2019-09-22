@@ -7,6 +7,15 @@
     margin-left: -30px;
   }
 
+  @include media(tablet) {
+    margin-right: -15px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    padding-right: 15px;
+    border-top: 1px solid #1D1D1D;
+    border-bottom: 1px solid #1D1D1D;
+  }
+
   &__column {
     padding-left: 48px;
     flex: 1 1 0%;

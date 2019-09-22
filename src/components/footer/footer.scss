@@ -1,6 +1,12 @@
 .footer {
+  position: relative;
   padding: 40px 0 55px;
   background: #232323;
+
+  @include media(tablet) {
+    padding-top: 90px;
+    padding-bottom: 0;
+  }
 
   &__inner {
     @extend %container;
@@ -10,6 +16,10 @@
     display: flex;
     margin-left: -$grid_gutter/2;
     margin-right: -$grid_gutter/2;
+
+    @include media(tablet) {
+      flex-direction: column;
+    }
   }
 
   &__col {
@@ -42,6 +52,11 @@
     @include media(desktop) {
       margin-left: -30px;
     }
+
+    @include media(tablet) {
+      display: block;
+      padding-right: 0;
+    }
   }
 
   &__copyright {
@@ -53,6 +68,14 @@
     @include media(desktop) {
       padding-left: 30px;
     }
+
+    @include media(tablet) {
+      max-width: 100%;
+      margin: 15px 0;
+      padding-right: 15px;
+      font-size: 10px;
+      text-align: center;
+    }
   }
 
   &__reka {
@@ -62,6 +85,16 @@
 
     @include media(desktop) {
       padding-left: 30px;
+    }
+
+    @include media(tablet) {
+      max-width: inherit;
+      background: #1D1D1D;
+      margin-right: -15px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-right: 15px;
+      text-align: center;
     }
 
     a {
@@ -76,6 +109,10 @@
         display: block;
         font-weight: 700;
         white-space: nowrap;
+
+        @include media(tablet) {
+          display: inline-block;
+        }
       }
     }
   }
@@ -83,6 +120,14 @@
   &__logo {
     display: block;
     margin-bottom: 38px;
+
+    @include media(tablet) {
+      position: absolute;
+      top: 30px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      margin-bottom: 0;
+    }
 
     svg {
       display: inline-block;
@@ -96,7 +141,18 @@
     }
   }
 
+  &__contact {
+    @include media(tablet) {
+      text-align: center;
+    }
+  }
+
   &__number {
+
+    @include media(tablet) {
+      margin-top: 30px;
+    }
+
     a {
       color: #fff;
       font-size: 27px;
@@ -117,6 +173,10 @@
     color: #757474;
     font-size: 14px;
     font-weight: 100;
+
+    @include media(tablet) {
+      margin-top: 10px;
+    }
   }
 
   &__mail {
@@ -130,5 +190,11 @@
 
   &__social {
     margin-top: 30px;
+
+    @include media(tablet) {
+      margin-top: 24px;
+      display: flex;
+      justify-content: center;
+    }
   }
 }
