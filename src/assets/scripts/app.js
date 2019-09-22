@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import priorityNav from 'priority-nav';
+import Swiper from 'swiper';
 
 // Foundation JS relies on a global varaible. In ES6, all imports are hoisted
 // to the top of the file so if we used`import` to import Foundation,
@@ -41,6 +42,29 @@ $(function() {
 });
 
 /**
+ * Hero Slider
+ */
+$(function() {
+  let mySwiper = new Swiper('.swiper-container', {
+    // Optional parameters
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+    speed: 600,
+  });
+});
+
+/**
  * Footer Nav
  */
 $(function() {
@@ -56,9 +80,12 @@ $(function() {
     if (windowWidth <= 992) {
       if (!isMobile) {
         $footerNav.addClass('footer-nav_mobile');
-        $footerNavTitle.on('click', (e) => {
+        $footerNavTitle.on('click', e => {
           let $aim = $(e.target);
-          $aim.next().toggleClass('footer-nav__list_open').fadeToggle(200);
+          $aim
+            .next()
+            .toggleClass('footer-nav__list_open')
+            .fadeToggle(200);
         });
         $footerNavLists.hide();
         $footerNavListsOpen.each(function() {
@@ -66,15 +93,13 @@ $(function() {
         });
         isMobile = true;
       }
-    }
-    else if (isMobile) {
+    } else if (isMobile) {
       $footerNav.removeClass('footer-nav_mobile');
       $footerNavTitle.off('click');
       $footerNavLists.show();
       isMobile = false;
     }
   });
-
 });
 
 // Test

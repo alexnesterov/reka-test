@@ -11,6 +11,7 @@
 
 // Libs
 @import 'lib/priority-nav-core';
+@import '../../../node_modules/swiper/css/swiper.min';
 
 // Base
 @import 'base/normalize';
@@ -34,4 +35,6 @@
 @import '../../components/social/social';
 @import '../../components/footer-nav/footer-nav';
 @import '../../components/about/about';
+@import '../../components/hero/hero';
+@import '../../components/button/button';
 

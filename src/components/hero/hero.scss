@@ -1,0 +1,124 @@
+.hero {
+  .swiper-container {
+    width: 100%;
+    height: 702px;
+  }
+
+  .swiper-slide {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: -moz-linear-gradient(
+        left,
+        rgba(0, 0, 0, 0.65) 0%,
+        rgba(0, 0, 0, 0) 100%
+      );
+      background: -webkit-linear-gradient(
+        left,
+        rgba(0, 0, 0, 0.65) 0%,
+        rgba(0, 0, 0, 0) 100%
+      );
+      background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.65) 0%,
+        rgba(0, 0, 0, 0) 100%
+      );
+    }
+  }
+
+  &__inner {
+    @extend %container;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+
+  &__block {
+    max-width: 550px;
+  }
+
+  &__title {
+    margin: 0;
+    font-family: $font_secondary;
+    font-size: 83px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 4px;
+    color: #fff;
+  }
+
+  &__text {
+    margin-top: 10px;
+    color: #ffff;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+  }
+
+  &__actions {
+    margin-top: 45px;
+
+    .button {
+      margin-left: 20px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 16px;
+    height: 80px;
+    opacity: 0.5;
+    transition: opacity .2s ease-in-out;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:after {
+      content: '';
+      font-size: 0;
+    }
+  }
+
+  .swiper-button-prev {
+    background: url('../images/slider-prev.svg') no-repeat center;
+  }
+
+  .swiper-button-next {
+    background: url('../images/slider-prev.svg') no-repeat center;
+    transform: rotate(180deg);
+  }
+
+  .swiper-pagination {
+    bottom: 5px !important;
+  }
+
+  .swiper-pagination-bullet {
+    margin-left: 6px !important;
+    margin-right: 6px !important;
+    width: 60px;
+    height: 4px;
+    background: #FFFFFF;
+    opacity: 0.6;
+    border-radius: 0;
+
+    &-active {
+      background: $brand_primary;
+      opacity: 1;
+    }
+  }
+}
