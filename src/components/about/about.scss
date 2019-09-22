@@ -1,0 +1,98 @@
+.about {
+  padding: 70px 0 93px;
+
+  &__inner {
+    @extend %container;
+  }
+
+  &__block {
+    position: relative;
+    padding: 26px 15px 52px;
+    text-align: center;
+
+    /*Borders*/
+    background-image: linear-gradient(
+        to right,
+        #9b9b9b 20%,
+        rgba(255, 255, 255, 0) 0%
+      ),
+      linear-gradient(#9b9b9b 20%, rgba(255, 255, 255, 0) 0%),
+      linear-gradient(to right, #9b9b9b 20%, rgba(255, 255, 255, 0) 0%),
+      linear-gradient(#9b9b9b 20%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom, right, top, left;
+    background-size: 5px 1px, 1px 5px, 5px 1px, 1px 5px;
+    background-repeat: repeat-x, repeat-y, repeat-x, repeat-y;
+  }
+
+  &__head {
+    margin-bottom: 26px;
+  }
+
+  &__title {
+    margin: 0 0 5px;
+    font-family: $font_secondary;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.45px;
+  }
+
+  &__logo {
+
+    img {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  &__body {
+    max-width: 855px;
+    margin: 0 auto;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  &__action {
+    position: absolute;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    width: 220px;
+    transform: translate(-50%, 50%);
+    background: #fff;
+
+    a {
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      padding: 11px 45px 9px;
+      color: #000;
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 1px;
+      border: 3px solid $brand_primary;
+
+      &:hover {
+        color: #000;
+      }
+
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: #fff;
+        width: 3px;
+        height: 17px;
+      }
+
+      &:before {
+        left: -3px;
+      }
+
+      &:after {
+        right: -3px;
+      }
+    }
+  }
+}
