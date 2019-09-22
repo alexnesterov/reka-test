@@ -7,6 +7,7 @@
 
   &__main {
     background: #171717;
+    // height: 74px;
 
     @include media(tablet) {
       padding: 14px 0 14px;
@@ -17,7 +18,6 @@
   &__row {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     margin-left: -15px;
     margin-right: -15px;
   }
@@ -60,6 +60,14 @@
   &__search {
     @include media(tablet) {
       display: none;
+    }
+  }
+
+  &__phone {
+    margin-right: 16px;
+
+    @include media(desktop) {
+      margin-right: 0;
     }
   }
 

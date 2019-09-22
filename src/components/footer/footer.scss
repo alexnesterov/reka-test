@@ -47,6 +47,7 @@
     flex: 0 0 80%;
     max-width: 80%;
     padding-left: 48px;
+    padding-right: 110px;
 
     @include media(desktop) {
       padding-left: 30px;
@@ -73,6 +74,7 @@
       span {
         display: block;
         font-weight: 700;
+        white-space: nowrap;
       }
     }
   }

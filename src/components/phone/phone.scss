@@ -13,11 +13,12 @@
 
   &__desc {
     color: #afafaf;
-    margin: 0 0 3px 10px;
+    margin: 0 0 7px 10px;
   }
 
   &__number {
     font-size: 22px;
+    white-space: nowrap;
     span {
       font-weight: 500;
     }

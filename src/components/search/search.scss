@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
 
-  @include media(desktop) {
+  @media(max-width: 1235px) {
     width: 80px;
   }
 
@@ -12,7 +12,7 @@
     position: absolute;
     right: 0;
     width: 100%;
-    padding: 10px 25px 8px 0;
+    padding: 16px 25px 8px 0;
     font-size: 14px;
     color: #fff;
     background: #171717;
@@ -23,7 +23,7 @@
       border-color: #fff;
 
       @include media(desktop) {
-        width: 280px;
+        width: 300px;
       }
     }
   }
