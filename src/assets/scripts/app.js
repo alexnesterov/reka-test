@@ -97,9 +97,17 @@ $(function() {
     breakpoints: {
       // when window width is >= 320px
       320: {
-        // slidesPerView: 2,
-        // spaceBetween: 20
+        slidesPerView: 1,
       },
+      576: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      992: {
+        slidesPerView: 4,
+      }
     }
   });
 });
