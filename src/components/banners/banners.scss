@@ -13,6 +13,12 @@
     align-items: flex-start;
   }
 
+  &__block {
+    display: block;
+    background-size: cover;
+    background-position: center;
+  }
+
   &__item {
     padding: 2.307692308% 0 0 2.307692308%;
 
@@ -71,10 +77,5 @@
         padding-bottom: 48.503937008%;
       }
     }
-  }
-
-  &__block {
-    background-size: cover;
-    background-position: center;
   }
 }
