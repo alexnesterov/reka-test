@@ -195,6 +195,39 @@ $(function() {
 });
 
 /**
+ * Instagram Slider
+ */
+$(function() {
+  let mySwiper = new Swiper('.instagram .swiper-container', {
+    // Optional parameters
+    loop: true,
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    pagination: {
+      el: '.instagram .swiper-pagination',
+      clickable: true,
+    },
+    // Navigation arrows
+    navigation: {
+      nextEl: '.instagram .swiper-button-next',
+      prevEl: '.instagram .swiper-button-prev',
+    },
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.instagram .swiper-scrollbar',
+    },
+    speed: 600,
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        // centeredSlides: true,
+        // slidesPerView: 'auto',
+      },
+    }
+  });
+});
+
+/**
  * Footer Nav
  */
 $(function() {
