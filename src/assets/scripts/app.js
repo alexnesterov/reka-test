@@ -45,21 +45,53 @@ $(function() {
  * Hero Slider
  */
 $(function() {
-  let mySwiper = new Swiper('.swiper-container', {
+  let mySwiper = new Swiper('.hero .swiper-container', {
     // Optional parameters
     loop: true,
     pagination: {
-      el: '.swiper-pagination',
+      el: '.hero .swiper-pagination',
       clickable: true,
     },
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.hero .swiper-button-next',
+      prevEl: '.hero .swiper-button-prev',
     },
     // And if we need scrollbar
     scrollbar: {
-      el: '.swiper-scrollbar',
+      el: '.hero .swiper-scrollbar',
+    },
+    speed: 600,
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        // slidesPerView: 2,
+        // spaceBetween: 20
+      },
+    }
+  });
+});
+
+/**
+ * Features Slider
+ */
+$(function() {
+  let mySwiper = new Swiper('.features .swiper-container', {
+    // Optional parameters
+    slidesPerView: 4,
+    loop: true,
+    pagination: {
+      el: '.features .swiper-pagination',
+      clickable: true,
+    },
+    // Navigation arrows
+    navigation: {
+      nextEl: '.features .swiper-button-next',
+      prevEl: '.features .swiper-button-prev',
+    },
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.features .swiper-scrollbar',
     },
     speed: 600,
     breakpoints: {
