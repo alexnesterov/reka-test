@@ -142,9 +142,53 @@ $(function() {
       },
       992: {
         slidesPerView: 5,
+        centeredSlides: false,
       },
       1200: {
         slidesPerView: 6,
+        centeredSlides: false,
+      },
+    }
+  });
+});
+
+/**
+ * Top Products Slider
+ */
+$(function() {
+  let mySwiper = new Swiper('.top-products .swiper-container', {
+    // Optional parameters
+    loop: true,
+    slidesPerView: 4,
+    pagination: {
+      el: '.top-products .swiper-pagination',
+      clickable: true,
+      dynamicBullets: true,
+      dynamicMainBullets: 3,
+    },
+    // Navigation arrows
+    navigation: {
+      nextEl: '.top-products .swiper-button-next',
+      prevEl: '.top-products .swiper-button-prev',
+    },
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.top-products .swiper-scrollbar',
+    },
+    speed: 600,
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 'auto',
+        centeredSlides: true,
+      },
+      768: {
+        slidesPerView: 3,
+        centeredSlides: true,
+      },
+      992: {
+        slidesPerView: 4,
+        centeredSlides: false,
       },
     }
   });

@@ -1,0 +1,30 @@
+[
+  {
+    "picture": "product_01.jpg",
+    "title": "Футболка TRAILHEAD MTS-FASTER",
+    "color": "белая",
+    "price": "17 359 ₽",
+    "logo": "product_logo.png"
+  },
+  {
+    "picture": "product_02.jpg",
+    "title": "Футболка TRAILHEAD MTS-FASTER",
+    "color": "белая",
+    "price": "17 359 ₽",
+    "logo": "product_logo.png"
+  },
+  {
+    "picture": "product_03.jpg",
+    "title": "Футболка TRAILHEAD MTS-FASTER",
+    "color": "белая",
+    "price": "17 359 ₽",
+    "logo": "product_logo.png"
+  },
+  {
+    "picture": "product_04.jpg",
+    "title": "Футболка TRAILHEAD MTS-FASTER",
+    "color": "белая",
+    "price": "17 359 ₽",
+    "logo": "product_logo.png"
+  }
+]

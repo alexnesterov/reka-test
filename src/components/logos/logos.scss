@@ -16,6 +16,11 @@
 
   .swiper-container {
     padding: 50px 0;
+
+    @include media(tablet) {
+      padding-top: 30px;
+      padding-bottom: 60px;
+    }
   }
 
   .swiper-wrapper {
@@ -64,7 +69,7 @@
   }
 
   .swiper-pagination {
-    bottom: -3px !important;
+    bottom: 24px !important;
     display: none;
 
     @include media(tablet) {

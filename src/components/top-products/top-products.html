@@ -1,0 +1,31 @@
+<section class="top-products">
+  <h2 class="top-products__head">Лучшие товары</h2>
+
+  <!-- Slider main container -->
+  <div class="top-products__inner">
+    <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        {{#each top-products}}
+        <div class="swiper-slide">
+          <a class="top-products__block" href="#">
+            <img class="top-products__logo" src="./assets/images/{{ logo }}" alt="">
+            <div class="top-products__picture">
+              <img src="./assets/images/{{ picture }}" alt="">
+            </div>
+            <h3 class="top-products__title">{{ title }}</h3>
+            <div class="top-products__color">{{ color }}</div>
+            <div class="top-products__price">{{ price }}</div>
+          </a>
+        </div>
+        {{/each}}
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</section>
