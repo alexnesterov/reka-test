@@ -5,15 +5,16 @@
 
   &__list {
     position: relative;
-    margin: -30px 0 0 -30px;
+    margin: -2.307692308% 0 0 -2.307692308%;
     padding: 0;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
   }
 
   &__item {
-    padding: 30px 0 0 30px;
+    padding: 2.307692308% 0 0 2.307692308%;
 
     &_01 {
       width: 25%;
