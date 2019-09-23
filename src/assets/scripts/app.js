@@ -113,6 +113,44 @@ $(function() {
 });
 
 /**
+ * Logos Slider
+ */
+$(function() {
+  let mySwiper = new Swiper('.logos .swiper-container', {
+    // Optional parameters
+    loop: true,
+    slidesPerView: 6,
+    pagination: {
+      el: '.logos .swiper-pagination',
+      clickable: true,
+    },
+    // Navigation arrows
+    navigation: {
+      nextEl: '.logos .swiper-button-next',
+      prevEl: '.logos .swiper-button-prev',
+    },
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.logos .swiper-scrollbar',
+    },
+    speed: 600,
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        centeredSlides: true,
+        slidesPerView: 'auto',
+      },
+      992: {
+        slidesPerView: 5,
+      },
+      1200: {
+        slidesPerView: 6,
+      },
+    }
+  });
+});
+
+/**
  * Footer Nav
  */
 $(function() {

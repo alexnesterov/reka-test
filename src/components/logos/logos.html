@@ -1,0 +1,24 @@
+<section class="logos">
+  <!-- Slider main container -->
+  <div class="logos__inner">
+    <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        {{#each logos}}
+        <div class="swiper-slide">
+          <img src="./assets/images/{{ name }}" alt="logos" class="logos__image">
+        </div>
+        {{/each}}
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need scrollbar -->
+      {{!-- <div class="swiper-scrollbar"></div> --}}
+    </div>
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</section>
