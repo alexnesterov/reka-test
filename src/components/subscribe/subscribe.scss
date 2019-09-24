@@ -72,6 +72,8 @@
     background: #fff;
     @include placeholder(#9d9c9c);
     border: 0 none;
+    font-size: 14px;
+    height: 40px;
 
     @include media(phone) {
       width: 100%;
