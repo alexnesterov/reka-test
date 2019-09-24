@@ -1,0 +1,160 @@
+.subscribe {
+  background: #e8f0f3;
+
+  &__inner {
+    @extend %container;
+
+    @include media(phone) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.2;
+
+    @media (max-width: 1280px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 13px 0 16px;
+
+    }
+  }
+
+  &__title {
+    margin: 0;
+    color: #0a0400;
+    font-size: 14px;
+    line-height: 1.928571429;
+    font-weight: 600;
+    letter-spacing: 1.45px;
+    text-transform: uppercase;
+
+    @media (max-width: 1280px) {
+      margin-bottom: 12px;
+      line-height: 1.2;
+    }
+
+    @include media(tablet) {
+      span {
+        display: none;
+      }
+    }
+
+    @include media(mobile) {
+      font-size: 12px;
+      line-height: 1.25;
+      letter-spacing: 1.12px;
+    }
+  }
+
+  &__field {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__email {
+    @include media(phone) {
+      flex: 1 1 0%;
+    }
+  }
+
+  &__input {
+    margin: 0;
+    padding: 12px 15px 12px;
+    width: 242px;
+    background: #fff;
+    @include placeholder(#9d9c9c);
+    border: 0 none;
+
+    @include media(phone) {
+      width: 100%;
+    }
+  }
+
+  &__radios {
+    padding: 12px 20px 11px;
+    background: #fff;
+  }
+
+  &__radio {
+    position: absolute;
+    left: -9999px;
+
+    &:checked + .subscribe__label:before {
+      background: $brand_primary;
+    }
+
+    &:checked + .subscribe__label:after {
+      opacity: 1;
+    }
+  }
+
+  &__label {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 19px;
+    color: #232323;
+    font-weight: 300;
+    margin-right: 12px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+    }
+
+    &:before {
+      top: 1px;
+      left: 0;
+      width: 14px;
+      height: 14px;
+      background: #d8e1e5;
+      transition: background-color 0.2s ease-out;
+    }
+
+    &:after {
+      top: 5px;
+      left: 4px;
+      background: #fff;
+      width: 6px;
+      height: 6px;
+      opacity: 0;
+      transition: opacity 0.2s ease-in;
+    }
+  }
+
+  &__action {
+    @include media(mobile) {
+      width: 100%;
+      margin-top: 16px;
+      text-align: center;
+    }
+  }
+
+  &__button {
+    padding: 14px 30px 14px;
+    color: #fff;
+    background: #000;
+    border: 0;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 1.12px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}
