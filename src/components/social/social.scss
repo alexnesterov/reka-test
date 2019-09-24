@@ -11,4 +11,17 @@
       margin-left: 15px;
     }
   }
+
+  &__link {
+
+    svg {
+      fill: #484848;
+    }
+
+    &:hover {
+      svg * {
+        fill: lighten(#484848, 40%);
+      }
+    }
+  }
 }
