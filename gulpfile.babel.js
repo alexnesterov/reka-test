@@ -1,7 +1,6 @@
 'use strict';
 
 import plugins       from 'gulp-load-plugins';
-import htmlbeautify  from 'gulp-html-beautify';
 import yargs         from 'yargs';
 import browser       from 'browser-sync';
 import gulp          from 'gulp';
@@ -61,7 +60,7 @@ function pages() {
       data: 'src/data/',
       helpers: 'src/helpers/'
     }))
-    .pipe(htmlbeautify({
+    .pipe($.htmlBeautify({
       indent_size: 2,
       max_preserve_newlines: 0,
       end_with_newline: true,
