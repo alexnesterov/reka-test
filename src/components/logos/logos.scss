@@ -38,6 +38,7 @@
   .swiper-button-next {
     width: 15px;
     height: 48px;
+    user-select: none;
 
     @include media(tablet) {
       display: none;
