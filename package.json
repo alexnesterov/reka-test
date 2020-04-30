@@ -10,7 +10,7 @@
   "author": "Alex Nesterov",
   "license": "MIT",
   "dependencies": {
-    "jquery": "^3.2.1",
+    "jquery": "^3.5.0",
     "priority-nav": "^1.0.13",
     "swiper": "^5.0.3"
   },
