@@ -12,7 +12,7 @@
   "dependencies": {
     "jquery": "^3.2.1",
     "priority-nav": "^1.0.13",
-    "swiper": "^5.0.3"
+    "swiper": "^6.5.1"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
